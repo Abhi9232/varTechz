@@ -1,0 +1,30 @@
+class Main {
+    public static void main(String[] args) {
+
+        HashMap<String, String> Login = new HashMap<>();
+        Login.put("abhi","passabhi1");
+        Login.put("amol","passamol");
+        Login.put("rushi","passrushi");
+
+        Scanner sc =new Scanner(System.in);
+
+        System.out.println("enter the user ID");
+        String id=sc.nextLine();
+        System.out.println("enter the user pass");
+        String pass=sc.nextLine();
+
+        if(Login.containsKey(id)&&Login.get(id).equals(pass)){
+            System.out.println("Login successfull");
+        }else {
+            System.out.println("login failed");
+        }
+    }
+}
+
+output --------------------------------------------
+
+enter the user ID
+abhi
+enter the user pass
+passabhi1
+Login successfull
